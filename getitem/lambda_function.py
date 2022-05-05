@@ -8,7 +8,7 @@ table=dynamodb.Table('Users')
 def lambda_handler(event, context):
     response = table.get_item(
         key={
-            'firstname':'San'
+            'id':'12345'
             
         }
         )
